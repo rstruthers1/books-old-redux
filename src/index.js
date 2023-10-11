@@ -9,6 +9,7 @@ import BookInventory from "./components/book/BookInventory";
 import HomePage from "./components/HomePage";
 import { Provider } from 'react-redux';
 import store from './store';
+import BookCreate from "./components/book/BookCreate";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
                 path: "books",
                 element: <BookInventory/>,
             },
+            {
+                path: "books/create",
+                element: <BookCreate/>,
+            }
         ]
     }
 ]);
