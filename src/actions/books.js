@@ -52,7 +52,7 @@ export const updateBook = (id, data) => async (dispatch) => {
 
 export const deleteBook = (id) => async (dispatch) => {
   try {
-    await BookService.delete(id);
+    await BookService.remove(id);
 
     dispatch({
       type: DELETE_BOOK,
